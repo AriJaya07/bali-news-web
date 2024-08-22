@@ -1,0 +1,48 @@
+/* components/AnimatedButton.module.css */
+.button {
+    position: relative;
+    padding: 20px 80px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #E3D2C2;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflow for the hovered text */
+}
+
+.text,
+.hoverText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 9px 0;
+    transition: transform 0.3s ease;
+}
+
+.text {
+    z-index: 2;
+}
+
+.hoverText {
+    transform: translateY(100%);
+    z-index: 1;
+}
+
+.button:hover .text {
+    transform: translateY(-100%);
+}
+
+.button:hover .hoverText {
+    transform: translateY(0);
+}
+
+
+@media only screen and (max-width: 385px) {
+    .button {
+        font-size: 12px;
+        padding: 18px 60px;
+    }
+}
