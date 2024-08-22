@@ -16,7 +16,7 @@ export default function Navbar(): JSX.Element {
 						<div className="flex items-center gap-16 my-2 w-full justify-between">
 							<Link href={'/homepage'} target={'_self'} className={''}>
 								<div className={''}>
-									<img src={'images/homepage/header-image.svg'} alt={'header-image'} className={'w-[3em]'}/>
+									<img src={'images/logo/profile.jpg'} alt={'header-image'} className={'w-[3em] h-[3em] rounded-full'}/>
 								</div>
 							</Link>
 							<div className="hidden lg:flex gap-8 ">

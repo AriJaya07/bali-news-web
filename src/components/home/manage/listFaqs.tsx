@@ -66,7 +66,7 @@ const listThree: ListFaq[] = [
 export default function ListFaqs(): JSX.Element {
 	return (
 		<div className={'text-black'}>
-			<div className={'mx-[2em] lg:mx-[10em] py-[5em]'}>
+			<div className={'py-[5em]'}>
 				<div className={'grid grid-cols-1 lg:grid-cols-3'} style={{gap: '5em'}}>
 					<div className={'flex flex-col gap-[1em]'}>
 						<h5 className={'text-[1.5em] font-[600]'}>
@@ -88,7 +88,7 @@ export default function ListFaqs(): JSX.Element {
 					<div className={'flex flex-col gap-[1em]'}>
 						<div className={''}>
 							<h5 className={'text-[1.5em] font-[600]'}>
-								Connoisseur brand Aged Irish Whiskey
+								Connoisseur brand
 							</h5>
 						</div>
 						<div className={'flex flex-col'}>
@@ -107,7 +107,7 @@ export default function ListFaqs(): JSX.Element {
 					<div className={'flex flex-col gap-[1em]'}>
 						<div className={''}>
 							<h5 className={'text-[1.5em] font-[600]'}>
-								Connoisseur brand Aged Irish Whiskey
+								Connoisseur Irish Whiskey
 							</h5>
 						</div>
 						<div className={'flex flex-col'}>

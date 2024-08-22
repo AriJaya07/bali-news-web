@@ -13,12 +13,12 @@ export default function CustomList(props: {key: number, title: string, content: 
 	}
 	return (
 		<div>
-			<div className={'flex flex-row items-center justify-between gap-[1em] pb-[0.5em] cursor-pointer'} onClick={toggleContent}>
+			<div className={'flex flex-row-reverse items-center justify-between gap-[1em] pb-[0.5em] cursor-pointer'} onClick={toggleContent}>
 				<p className={'flex-1 font-[500] text-[1em]'}>
 					{props.title}
 				</p>
-				<div className={'w-[1em]'} style={{ transform: isOpen ? 'rotate(45deg)' : '', transition: 'transform 1s ease'}}>
-					<img src={'images/faq/plus.svg'} alt={'plus'} className={'w-[1em]'}/>
+				<div className={'w-[1.3em]'} style={{ transform: isOpen ? 'rotate(45deg)' : '', transition: 'transform 1s ease'}}>
+					<img src={'images/faq/plus.svg'} alt={'plus'} className={'w-[1.3em]'}/>
 				</div>
 			</div>
 			<div className={'overflow-hidden transition-height duration-300 font-[400] text-[0.85em]'} style={{ maxHeight: isOpen ? `${getContentHeight()}px` : '0'}}>
@@ -26,7 +26,7 @@ export default function CustomList(props: {key: number, title: string, content: 
 				<div ref={contentRef} dangerouslySetInnerHTML={{__html: props.content}}/>
 			</div>
 			<div className={'py-[0.5em]'}>
-				<hr className={'w-full'}/>
+				<hr className={'w-full border-black'}/>
 			</div>
 		</div>
 	)
