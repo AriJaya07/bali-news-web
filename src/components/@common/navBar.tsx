@@ -25,7 +25,7 @@ export default function Navbar(): JSX.Element {
 								</Link>
 								<Link href={'/news-app'} target={'_self'} className="text-[#E3D2C2]">News App</Link>
 								<Link href={'/favorites-app'} target={'_self'} className="text-[#E3D2C2]">Favorites</Link>
-								<Link href={'/faq'} target={'_self'} className="text-[#E3D2C2]">FAQs</Link>
+								<Link href={'/faqs-app'} target={'_self'} className="text-[#E3D2C2]">FAQs</Link>
 							</div>
 						</div>
 						<div className="flex gap-6">
