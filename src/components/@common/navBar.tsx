@@ -13,18 +13,18 @@ export default function Navbar(): JSX.Element {
 			<nav>
 				<div className="mx-auto">
 					<div className="flex mx-auto justify-between w-5/6 ">
-						<div className="flex items-center gap-16 my-2 w-full justify-between">
+						<div className="flex items-center gap-16 my-3 w-full justify-between">
 							<Link href={'/homepage'} target={'_self'} className={''}>
 								<div className={''}>
 									<img src={'images/logo/profile.jpg'} alt={'header-image'} className={'w-[3em] h-[3em] rounded-full'}/>
 								</div>
 							</Link>
 							<div className="hidden lg:flex gap-8 ">
-								<Link href={'/aboutUs'} target={'_self'} className="text-[#E3D2C2]">
+								<Link href={'https://ari-portfolio.web.app'} target={'_blank'} className="text-[#E3D2C2]">
 									About Us
 								</Link>
-								<Link href={'/product'} target={'_self'} className="text-[#E3D2C2]">Product</Link>
-								<Link href={'/marketplace'} target={'_self'} className="text-[#E3D2C2]">Marketplace</Link>
+								<Link href={'/news-app'} target={'_self'} className="text-[#E3D2C2]">News App</Link>
+								<Link href={'/favorites-app'} target={'_self'} className="text-[#E3D2C2]">Favorites</Link>
 								<Link href={'/faq'} target={'_self'} className="text-[#E3D2C2]">FAQs</Link>
 							</div>
 						</div>

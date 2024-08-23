@@ -17,24 +17,18 @@ export const environment = {
 
 // -- Address -----------------------------------------------------------------
 export const ADDR_DEV = {
-  // BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
-  // SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
-  BLOG_RENT: "https://blog-rent.onrender.com/api/v1",
-  SOCKET_RENT: "wss://blog-rent.onrender.com/api/v1",
+  BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
+  SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
 };
 
 export const ADDR_STAGING = {
-  // BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
-  // SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
-  BLOG_RENT: "https://blog-rent.onrender.com/api/v1",
-  SOCKET_RENT: "wss://blog-rent.onrender.com/api/v1",
+  BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
+  SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
 };
 
 export const ADDR_PROD = {
-  // BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
-  // SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
-  BLOG_RENT: "https://blog-rent.onrender.com/api/v1",
-  SOCKET_RENT: "wss://blog-rent.onrender.com/api/v1",
+  BLOG_RENT: 'http://127.0.0.1:3000/api/v1',
+  SOCKET_RENT: 'ws://127.0.0.1:3000/api/v1',
 };
 
 export const ADDR = ["development", "local"].includes(NODE_MODE as string)

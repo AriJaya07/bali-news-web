@@ -1,12 +1,12 @@
 import Footer from "@/components/@common/footer";
 import Navbar from "@/components/@common/navBar";
-import Home from "@/components/home/home";
+import Favorites from "@/components/favorites/favorites";
 
-export default function Homepage(): JSX.Element {
+export default function FavoritesPage(): JSX.Element {
   return (
     <div className="">
       <Navbar />
-      <Home />
+      <Favorites />
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -108,9 +108,10 @@ export default function Category(): JSX.Element {
             <h5 className="text-[1.5em] font-[700]">Category</h5>
           </div>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={20} // Adjust the space between slides
             slidesPerView={5} // Ensure this fits the width of your container
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
             className="w-full" // Ensure the Swiper takes full width

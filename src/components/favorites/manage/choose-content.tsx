@@ -1,16 +1,3 @@
-"use client";
-
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
 interface MockRcommendList {
   id: number;
   image: string;
@@ -62,34 +49,27 @@ const mockRecommend: MockRcommendList[] = [
   },
 ];
 
-export default function Recommends(): JSX.Element {
+export default function ChooseContent(): JSX.Element {
   return (
-    <div className="w-full">
-      <div className="mb-5">
-        <h5 className="text-[1.5em] font-[700]">Recommends</h5>
-      </div>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={20} // Adjust the space between slides
-        slidesPerView={1} // Ensure this fits the width of your container
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 7000, disableOnInteraction: false }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-        className="w-full " // Ensure the Swiper takes full width
-      >
+    <div className="py-10">
+      <div className="flex flex-wrap gap-[1.5em] w-full">
         {mockRecommend.map((item: MockRcommendList, index: number) => (
-          <SwiperSlide key={index}>
-            <div className="p-2 pb-10 flex justify-center">
+          <div key={index} className="flex-col w-1/6">
+            <div className="flex flex-row">
               <img
                 src={item.image}
                 alt={`image-${index}`}
-                className="w-screen h-[30em] rounded-2xl"
+                className="w-full rounded-2xl"
               />
+              <div className="relative cursor-pointer">
+                <p className="absolute bg-white h-[1.6em] w-[1.6em]  text-center rounded-full text-[1em] top-[0.5em] left-[-2.5em]">&times;</p>
+              </div>
             </div>
-          </SwiperSlide>
+            <p className="text-[1em] font-[600]">{item.judul}</p>
+            <p className="text-[0.85em] font-[400]">{item.description}</p>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 }
